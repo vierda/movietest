@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/grid_height"
+    android:background="@android:color/black">
+
+    <com.hooq.demo.movie.common.widget.SquareImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/medium_padding"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="@dimen/text_box_size"
+        android:paddingLeft="@dimen/medium_padding"
+        android:paddingRight="@dimen/medium_padding"
+        android:paddingBottom="@dimen/small_padding"
+        android:textSize="@dimen/sub_title_text_size"
+        android:layout_gravity="bottom"
+        android:text="text"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"/>
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hooq.demo.movie.common.widget.CustomScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_inside_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.hooq.demo.movie.common.widget.SquareImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:adjustViewBounds="true"
+                android:gravity="center_horizontal"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/small_padding"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movie_release_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sub_title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movie_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/medium_padding"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/similar_movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/similar_movie"
+                android:padding="@dimen/medium_padding"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/similar_text_size"
+                android:textStyle="bold" />
+
+            <com.hooq.demo.movie.common.widget.AutoViewPager
+            android:id="@+id/view_pager"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:layout_marginBottom="@dimen/medium_padding"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:avp_autoScroll="true"
+            app:avp_duration="2500" />
+
+            <TextView
+                android:id="@+id/no_similar_movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_similar_movie"
+                android:padding="@dimen/medium_padding"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+    </com.hooq.demo.movie.common.widget.CustomScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Movie Demo</string>
+    <string name="no_similar_movie">No Similar Movies Available</string>
+    <string name="similar_movie">Similar Movies</string>
+</resources>
